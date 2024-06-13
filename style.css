@@ -1,5 +1,9 @@
 /*!========== common use css ==========*/
-
+@font-face {
+  font-family: "jost";
+  src: url(./Jost-Regular.ttf);
+}
+}
 * {
   margin: 0% !important;
   padding: 0%;
