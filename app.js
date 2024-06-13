@@ -771,7 +771,7 @@ function filterDetailts() {
     for (var details in countries[selectedCountry]) {
       if (typeof countries[selectedCountry][details] != "object") {
         displayContainer.innerHTML = `
-        <div class="detailsCard grid grid-two-cols" style="flex:1 1 100%; height:700px">
+        <div class="detailsCard grid grid-two-cols" style="flex:1 1 100%; height:100%">
         <div class="cardImg w-100" style="height:100% !important;">
             <img
               class="w-100 h-100"
@@ -802,7 +802,7 @@ function filterDetailts() {
       }
       if (typeof countries[selectedCountry][details] == "object") {
         displayContainer.innerHTML += `
-        <div class="detailsCard grid">
+        <div class="detailsCard grid" style="height:100%;">
         <div class="cardImg w-100 h-100">
             <img
               class="w-100 h-100"

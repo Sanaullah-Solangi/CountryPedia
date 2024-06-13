@@ -15,7 +15,7 @@ html {
 
 .main-container,
 .header {
-  max-width: 900px;
+  max-width: 1200px;
 }
 
 .section {
@@ -167,7 +167,7 @@ html {
   height: 100%;
 }
 .m-auto {
-  margin: auto;
+  margin: auto !important;
 }
 .pointer {
   cursor: pointer;
@@ -231,7 +231,7 @@ body {
 
 .displayContainer {
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 /*?=== DISPALY CARDS ===*/
 .detailsCard {
@@ -249,9 +249,12 @@ body {
 .detailsCard > .cardImg {
   height: 300px !important;
 }
+.detailsCard > .cardImg > img {
+  object-fit: cover;
+}
 /*?=== CARD CONTENT ===*/
 .detailsCard > .cardContent {
-  padding: 0px 20px;
+  padding: 20px 20px;
 }
 /*?=== CARD HEADING ===*/
 .detailsCard > .cardContent > h1 {

@@ -1,0 +1,56 @@
+@media (width <= 1200px) {
+  .main-container {
+    width: 95%;
+    margin: auto !important;
+  }
+}
+
+@media (width <=930px) {
+  .grid-two-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /*?=== DISPALY CARDS ===*/
+.detailsCard {
+    flex: 1 1 100%;
+}
+
+@media (width <= 698px) {
+  /*!=============== SEARCH BTNS STYLING ===============*/
+  /*?=== BTN'S CONTAINER ===*/
+  .btnsForSearch {
+    padding: 30px 10px;
+    gap: 1rem;
+    margin-block: 20px !important;
+  }
+}
+
+@media (width <= 615px) {
+  /*!=============== SEARCH BTNS STYLING ===============*/
+  /*?=== SELECT INPUT ===*/
+  .btnsForSearch > :is(select, button) {
+    font-size: 1.4rem;
+    width: 180px;
+  }
+}
+@media (width <= 510px) {
+  /*!=============== NAVBAR SECTION STYLING ===============*/
+  .navbar .logo > img {
+    margin-top: 1rem !important;
+    width: 70px;
+    height: 70px;
+  }
+  /*!=============== SEARCH BTNS STYLING ===============*/
+  /*?=== BTN'S CONTAINER ===*/
+  .btnsForSearch {
+    padding: 20px 10px;
+    flex-wrap: wrap;
+    margin-top: 20px !important;
+  }
+  /*?=== SELECT INPUT ===*/
+  .btnsForSearch > :is(select, button) {
+    flex: 1 1 40%;
+  }
+  .btnsForSearch > .searchBtn {
+    flex: 1 1 100%;
+  }
+}
