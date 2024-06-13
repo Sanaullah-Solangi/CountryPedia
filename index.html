@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countrypedia</title>
+    <!--!todo======= FACICON LINK =======-->
+    <link rel="shortcut icon" href="./images/logo4.png" type="image/x-icon" />
+    <!--!todo======= BOOTSTRAP LINK =======-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--!todo======= RESPONSIVE CSS LINK =======-->
+    <link rel="stylesheet" href="./responsive.css" />
+    <!--!todo======= STYLE CSS LINK =======-->
+    <link rel="stylesheet" href="./style.css" />
+    <!--!todo======= SWEAT ALERT =======-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <!--!=============== MAIN CONTAINER ===============-->
+    <div class="main-container m-auto">
+      <!--!=============== NAVBAR SECTION STARTS ===============-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!--?=== LOGO ===-->
+          <a class="logo black" href="#"
+            ><img
+              src="./images/logo4.png"
+              width="100px"
+              height="100px"
+              alt="This is website logo"
+          /></a>
+          <!--?=== TOGGLE BTNS ===-->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      <!--!=============== SELECT OPTIONS FOR SEARCHING ===============-->
+      <div class="btnsForSearch d-flex jc-center al-center">
+        <!--?=== SELECT COUNTRY ===-->
+        <select
+          name="country"
+          class="pointer btn country"
+          onchange="changeCountry()"
+        ></select>
+        <!--?=== SELECT PROVINCE ===-->
+        <select name="provice" class="pointer btn province"></select>
+        <!--?=== BTN FOR CONCLUDE RESUL ===-->
+        <button class="searchBtn" onclick="filterDetailts()">Search</button>
+      </div>
+      <!--!=============== DISPLAY DETAiLS SECTION STARTS ===============-->
+      <div class="displayContainer d-flex jc-center al-center"></div>
+    </div>
+    <!--!todo======= BOOTSTRAPE =======-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!--!todo======= MY JAVASCRIPT =======-->
+    <script src="./app.js"></script>
+  </body>
+</html>
