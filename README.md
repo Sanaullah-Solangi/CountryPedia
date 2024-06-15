@@ -1,1 +1,2 @@
-[https://mycountrypedia.netlify.app/](MyCountryPedia)
+[https://mycountrypedia.netlify.app/]
+
